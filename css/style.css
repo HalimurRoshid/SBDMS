@@ -1,11 +1,10 @@
 /********** Template CSS **********/
 :root {
-  --primary: #13c5dd;
+  --primary: #ff4500;
   --secondary: #354f8e;
   --light: #eff5f9;
   --dark: #1d2a4d;
 }
-
 .btn {
   font-weight: 700;
   transition: 0.5s;
@@ -268,6 +267,7 @@ li {
   top: 10px;
   right: 10px;
   color: rgb(245, 52, 52);
+  box-shadow: 2px 2px 10px #00000088;
 }
 .red {
   color: rgb(245, 52, 52);
@@ -317,7 +317,7 @@ li {
   bottom: 0;
   height: 2px;
   width: 0%;
-  background: #1a76d1;
+  background: var(--primary);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.4s ease;
@@ -340,7 +340,7 @@ li {
   font-weight: 500;
 }
 .blog .single-news .news-body h2 a:hover {
-  color: #1a76d1;
+  color: var(--primary);
 }
 .blog .single-news .news-content p {
   font-weight: 400;
@@ -353,7 +353,7 @@ li {
   display: inline-block;
   font-size: 14px;
   margin-bottom: 5px;
-  background: #1a76d1;
+  background: var(--primary);
   color: #fff;
   padding: 4px 15px;
   border-radius: 3px;
@@ -395,7 +395,7 @@ li {
   bottom: -1px;
   height: 100%;
   width: 3px;
-  background: #1a76d1;
+  background: var(--primary);
 }
 .main-sidebar .single-widget:last-child {
   margin: 0;
@@ -440,7 +440,7 @@ li {
   border-radius: 0 5px 5px 0;
 }
 .main-sidebar .search .button:hover {
-  background: #1a76d1;
+  background: var(--primary);
   color: #fff;
 }
 /* Category List */
@@ -459,7 +459,7 @@ li {
   font-size: 14px;
 }
 .main-sidebar .categor-list li a:hover {
-  color: #1a76d1;
+  color: var(--primary);
   padding-left: 7px;
 }
 .main-sidebar .categor-list li a i {
@@ -512,7 +512,7 @@ li {
   margin-top: 0;
 }
 .main-sidebar .single-post .content h5 a:hover {
-  color: #1a76d1;
+  color: var(--primary);
 }
 .main-sidebar .single-post .content .comment li {
   color: #888;
@@ -549,7 +549,7 @@ li {
 }
 .main-sidebar .side-tags .tag a:hover {
   color: #fff;
-  background: #1a76d1;
+  background: var(--primary);
   border-color: transparent;
 }
 /* News Single */
@@ -581,7 +581,7 @@ li {
   font-weight: 600;
 }
 .news-single .news-title a:hover {
-  color: #1a76d1;
+  color: var(--primary);
 }
 /* Blog Meta */
 .news-single {
@@ -609,7 +609,7 @@ li {
 }
 .news-single .meta span i {
   margin-right: 5px;
-  color: #1a76d1;
+  color: var(--primary);
 }
 .news-single .meta-left {
   float: left;
@@ -735,7 +735,7 @@ li {
 }
 .news-single .prev-next li a:hover {
   color: #fff;
-  background: #1a76d1;
+  background: var(--primary);
   border-color: transparent;
 }
 /* Blog Comments */
@@ -854,7 +854,7 @@ li {
   display: inline-block;
   margin-top: 10px;
   border-radius: 4px;
-  background: #1a76d1;
+  background: var(--primary);
   color: #fff;
 }
 .news-single .single-comments a:hover {
@@ -906,7 +906,7 @@ li {
   left: 12px;
   top: 17px;
   z-index: 1;
-  color: #1a76d1;
+  color: var(--primary);
 }
 .news-single .form-group input {
   width: 100%;
@@ -977,7 +977,7 @@ li {
 }
 .news-single .form-group.button .btn {
   background: #fff;
-  background: #1a76d1;
+  background: var(--primary);
   color: #fff;
 }
 .news-single .form-group.button .btn:hover {
@@ -996,3 +996,23 @@ li {
 /*===================
 	End Blog CSS
 =====================*/
+/*========================
+	Start Clients CSS
+==========================*/
+.clients {
+  background-color: #ff44008a;
+  padding: 80px 0px;
+  position: relative;
+}
+.clients .single-clients {
+}
+.clients .single-clients img {
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  float: none;
+  padding: 0 35px;
+}
+/*========================
+	End Clients CSS
+==========================*/
