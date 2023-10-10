@@ -119,7 +119,7 @@
 			Clients Slider JS
 		=================================*/
   $(".clients-slider").owlCarousel({
-    items: 5,
+    items: 5, // Initially, display 5 items
     autoplay: true,
     autoplayTimeout: 3500,
     margin: 15,
@@ -129,20 +129,21 @@
     nav: false,
     dots: false,
     responsive: {
-      300: {
-        items: 1,
+      0: {
+        items: 1, // Display 1 item on screens less than 480px wide
       },
       480: {
-        items: 2,
+        items: 2, // Display 2 items on screens between 480px and 768px wide
       },
       768: {
-        items: 3,
+        items: 6, // Display 6 items on screens between 768px and 1170px wide
       },
       1170: {
-        items: 5,
+        items: 6, // Display 6 items on screens 1170px wide or wider
       },
     },
   });
+
   /*====================
 		Preloader JS
 	======================*/
