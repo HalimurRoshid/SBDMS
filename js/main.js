@@ -2,18 +2,37 @@
   "use strict";
 
   // Dropdown on mouse hover
+  // $(document).ready(function () {
+  //   function toggleNavbarMethod() {
+  //     if ($(window).width() > 992) {
+  //       $(".navbar .dropdown")
+  //         .on("mouseover", function () {
+  //           $(".dropdown-toggle", this).trigger("click");
+  //         })
+  //         .on("mouseout", function () {
+  //           $(".dropdown-toggle", this).trigger("click").blur();
+  //         });
+  //     } else {
+  //       $(".navbar .dropdown").off("mouseover").off("mouseout");
+  //     }
+  //   }
+  //   toggleNavbarMethod();
+  //   $(window).resize(toggleNavbarMethod);
+  // });
   $(document).ready(function () {
     function toggleNavbarMethod() {
       if ($(window).width() > 992) {
-        $(".navbar .dropdown")
-          .on("mouseover", function () {
-            $(".dropdown-toggle", this).trigger("click");
+        $(".navbar .nav-item.dropdown")
+          .on("mouseenter", function () {
+            $(this).addClass("show");
+            $(this).find(".dropdown-menu").addClass("show");
           })
-          .on("mouseout", function () {
-            $(".dropdown-toggle", this).trigger("click").blur();
+          .on("mouseleave", function () {
+            $(this).removeClass("show");
+            $(this).find(".dropdown-menu").removeClass("show");
           });
       } else {
-        $(".navbar .dropdown").off("mouseover").off("mouseout");
+        $(".navbar .nav-item.dropdown").off("mouseenter").off("mouseleave");
       }
     }
     toggleNavbarMethod();
@@ -96,7 +115,34 @@
     dots: true,
     loop: true,
   });
-
+  /*===============================
+			Clients Slider JS
+		=================================*/
+  $(".clients-slider").owlCarousel({
+    items: 5,
+    autoplay: true,
+    autoplayTimeout: 3500,
+    margin: 15,
+    smartSpeed: 400,
+    autoplayHoverPause: true,
+    loop: true,
+    nav: false,
+    dots: false,
+    responsive: {
+      300: {
+        items: 1,
+      },
+      480: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      1170: {
+        items: 5,
+      },
+    },
+  });
   /*====================
 		Preloader JS
 	======================*/
