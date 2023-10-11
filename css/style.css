@@ -54,7 +54,6 @@
   border-radius: 50% 50% 0 0;
   z-index: 99;
 }
-
 .navbar-light .navbar-nav .nav-link {
   font-family: "Jost", sans-serif;
   position: relative;
@@ -168,7 +167,10 @@
   display: flex;
   justify-content: center;
 }
-
+.vedio {
+  width: 460px;
+  height: 430px;
+}
 .price-carousel .owl-nav .owl-prev,
 .price-carousel .owl-nav .owl-next {
   position: relative;
@@ -193,6 +195,14 @@
 @media (min-width: 576px) {
   .f-item .row {
     height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vedio {
+    width: 360px;
+    height: 305px;
+    /* gap: 0 !important; */
   }
 }
 
