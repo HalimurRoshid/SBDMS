@@ -198,10 +198,10 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   .vedio {
-    width: 360px;
-    height: 305px;
+    width: 75vw;
+    height: 55vh;
     /* gap: 0 !important; */
   }
 }
