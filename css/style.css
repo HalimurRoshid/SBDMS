@@ -95,6 +95,11 @@
     margin-left: 0;
     padding: 10px 0;
   }
+  .vedio {
+    width: 330px;
+    height: 300px;
+    gap: 0 !important;
+  }
 }
 
 /* .hero-header {
@@ -196,7 +201,8 @@
   }
 }
 
-.team-carousel .owl-nav {
+.team-carousel .owl-nav,
+.about-carousel .owl-nav {
   position: absolute;
   padding: 0 45px;
   width: 100%;
@@ -208,7 +214,9 @@
 }
 
 .team-carousel .owl-nav .owl-prev,
-.team-carousel .owl-nav .owl-next {
+.team-carousel .owl-nav .owl-next,
+.about-carousel .owl-nav .owl-prev,
+.about-carousel .owl-nav .owl-next {
   position: relative;
   width: 45px;
   height: 45px;
@@ -223,7 +231,9 @@
 }
 
 .team-carousel .owl-nav .owl-prev:hover,
-.team-carousel .owl-nav .owl-next:hover {
+.team-carousel .owl-nav .owl-next:hover,
+.about-carousel .owl-nav .owl-prev:hover,
+.about-carousel .owl-nav .owl-next:hover {
   background: var(--dark);
 }
 

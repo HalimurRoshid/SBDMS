@@ -2,106 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>MEDINOVA - Hospital Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <meta charset="utf-8" />
+  <title>SBDMS - Smart Blood Donor Management System</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free HTML Templates" name="keywords" />
+  <meta content="Free HTML Templates" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+  <!-- Font awesome  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+  <!-- Icon Font Stylesheet -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link
+    href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+    rel="stylesheet"
+  />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+012 345 6789</a>
-                        <span class="text-body">|</span>
-                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>info@example.com</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-body ps-2" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="loader-outter"></div>
+      <div class="loader-inner"></div>
+
+      <div class="indicator">
+        <svg width="16px" height="12px">
+          <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          <polyline
+            id="front"
+            points="1 6 4 6 6 11 10 1 12 6 15 6"
+          ></polyline>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- End Preloader -->
+  <!-- Topbar Start -->
+  <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center">
+            <a
+              class="text-decoration-none text-body pe-3"
+              href="tel:+8801970248241"
+              ><i class="bi bi-telephone me-2"></i>+8801970248241</a
+            >
+            <span class="text-body">|</span>
+            <a
+              class="text-decoration-none text-body px-3"
+              href="mailto:info@hupbd.org"
+              ><i class="bi bi-envelope me-2"></i>info@hupbd.org</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center">
+            <a class="text-body px-2" href="https://www.facebook.com/HUPBD">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="text-body px-2" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="text-body px-2" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="text-body px-2" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="text-body ps-2" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <div class="container-fluid sticky-top bg-white shadow-sm">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand">
+          <h1 class="m-0 text-uppercase text-primary">
+            <i class="fa fa-clinic-medical me-2"></i>SBDMS
+          </h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link active">About</a>
+            <a href="service.html" class="nav-item nav-link">Blood Request</a>
+            <a href="price.html" class="nav-item nav-link">Event</a>
+            <a href="price.html" class="nav-item nav-link">Donor</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Service</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="blog.html" class="dropdown-item">Used Item</a>
+                <a href="detail.html" class="dropdown-item">Health Card</a>
+                <a href="team.html" class="dropdown-item">The Team</a>
+                <a href="testimonial.html" class="dropdown-item"
+                  >Testimonial</a
+                >
+                
+              </div>
             </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Login</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="blog.html" class="dropdown-item">New Donor</a>
+                <a href="detail.html" class="dropdown-item">Login</a> 
+                
+              </div>
+          </div>
         </div>
+      </nav>
     </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top bg-white shadow-sm mb-5">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>Medinova</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Pricing</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                                <a href="team.html" class="dropdown-item">The Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="appointment.html" class="dropdown-item">Appointment</a>
-                                <a href="search.html" class="dropdown-item">Search</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-
+  </div>
+  <!-- Navbar End -->
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -115,85 +184,145 @@
                 <div class="col-lg-7">
                     <div class="mb-4">
                         <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-                        <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
+                        <h1 class="display-4">HUPBD: Holistic Well-Being Through Blood Donation</h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                    <p>
+                        Help Unity Program Bangladesh (HUPBD) is a non-profit organization
+                        inspired by the legacy of DU Professor Dr. Salehin Qadri, a
+                        renowned Bangladeshi geneticist and pioneer in thalassemia
+                        research. HUPBD is committed to holistic well-being, supporting
+                        patients, championing health education, and saving lives.HUPBD
+                        multifaceted approach includes carrier screening and blood tests,
+                        venturing to remote areas, and implementing a Smart Blood Donor
+                        Management System. By embedding advanced techniques, persistent
+                        on-ground efforts, and modern technology into its projects, HUPB
+                        is continuously evolving to address the dynamic needs of the
+                        communities it serves. HUPBD endeavors aim not just at immediate
+                        relief but at building a resilient and informed society ready to
+                        face health challenges head-on.
+                    </p>
                     <div class="row g-3 pt-3">
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
-                                <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
-                            </div>
+                        <div class="col-sm-2 col-6">
+                          <div class="bg-light text-center rounded-circle py-4">
+                            <i
+                              class="fa-solid fa-person fa-beat fa-2xl mb-4"
+                              style="color: #076e1c"
+                            ></i>
+                            <h6 class="mb-0">Blood Donor</h6>
+                          </div>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
-                                <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
-                            </div>
+                        <div class="col-sm-2 col-6">
+                          <div class="bg-light text-center rounded-circle py-4">
+                            <i
+                              class="fa-solid fa-hospital fa-beat fa-2xl mb-4"
+                              style="color: #076e1c"
+                            ></i>
+                            <h6 class="mb-0">Hospital</h6>
+                          </div>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
-                                <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
-                            </div>
+                        <div class="col-sm-2 col-6">
+                          <div class="bg-light text-center rounded-circle py-4">
+                            <i
+                              class="fa-solid fa-school-flag fa-beat fa-2xl mb-4"
+                              style="color: #076e1c"
+                            ></i>
+                            <h6 class="mb-0">University</h6>
+                          </div>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
-                                <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
-                            </div>
+                        <div class="col-sm-2 col-6">
+                          <div class="bg-light text-center rounded-circle py-4">
+                            <i
+                              class="fa-solid fa-fire-flame-simple fa-beat fa-2xl mb-4"
+                              style="color: #076e1c"
+                            ></i>
+                            <h6 class="mb-0">Blood Bank</h6>
+                          </div>
                         </div>
-                    </div>
+                        <div class="col-sm-2 col-6">
+                          <div class="bg-light text-center rounded-circle py-4">
+                            <i
+                              class="fa-solid fa-users-between-lines fa-beat fa-2xl mb-4"
+                              style="color: #076e1c"
+                            ></i>
+                            <h6 class="mb-0">Local Group</h6>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
 
-
-    <!-- Search Start -->
+    <!-- professor Dr Salehin Qadri Start -->
     <div class="container-fluid bg-primary my-5 py-5">
         <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
-                <h1 class="display-4 mb-4">Find A Healthcare Professionals</h1>
-                <h5 class="text-white fw-normal">Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit justo</h5>
+          <div class="row gx-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="mb-4">
+                <h5
+                  class="d-inline-block text-white text-uppercase border-bottom border-5"
+                >
+                  professor Dr Salehin Qadri
+                </h5>
+                <h5 class="display-7">
+                  Bangladesh's Thalassemia Visionary: Dr. Salehin Qadri
+                </h5>
+              </div>
+              <p class="text-white mb-5">
+                Professor Dr. Salehin Qadri, a distinguished Bangladeshi
+                geneticist, was the founder of the Thalassemia Research Institute
+                in Dhaka. Born in 1954, he graduated from Dhaka Medical College
+                and earned his PhD in genetics from the University of London.
+                Dedicated to thalassemia research and treatment, Qadri pioneered
+                new interventions, notably in bone marrow transplantation and gene
+                therapy. A fervent advocate for blood donation, he also founded
+                the Thalassemia Society of Bangladesh. Honored with the Ramon
+                Magsaysay Award for Public Service in 2021, he passed away in
+                2023, leaving an indelible mark on the medical community.
+              </p>
+              <!-- <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href=""
+                >Find Doctor</a
+              >
+              <a class="btn btn-outline-dark rounded-pill py-3 px-5" href=""
+                >Read More</a
+              > -->
             </div>
-            <div class="mx-auto" style="width: 100%; max-width: 600px;">
-                <div class="input-group">
-                    <select class="form-select border-primary w-25" style="height: 60px;">
-                        <option selected>Department</option>
-                        <option value="1">Department 1</option>
-                        <option value="2">Department 2</option>
-                        <option value="3">Department 3</option>
-                    </select>
-                    <input type="text" class="form-control border-primary w-50" placeholder="Keyword">
-                    <button class="btn btn-dark border-0 w-25">Search</button>
-                </div>
+            <div class="col-lg-6">
+              <div class="text-center rounded">
+                <iframe
+                  width="450"
+                  height="400"
+                  class="rounded"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
+                >
+                </iframe>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Search End -->
+      </div>
+    <!-- professor Dr Salehin Qadri End -->
 
 
     <!-- Team Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Doctors</h5>
-                <h1 class="display-4">Qualified Healthcare Professionals</h1>
+                <h3 class="d-inline-block text-primary text-uppercase border-bottom border-5">We Are Happy Team</h3>
+                <h4 class="display-8">Words make relationships, relationships make power</h4>
             </div>
-            <div class="owl-carousel team-carousel position-relative">
+            <div class="owl-carousel about-carousel position-relative">
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
-                        <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-1.jpg" style="object-fit: cover;">
+                        <div class="col-12 col-sm-5 h-150">
+                            <img class="img-fluid h-100" src="https://i.ytimg.com/vi/q1uury_DCrw/maxresdefault.jpg" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                                <h3>Dr. Firdausi Qadri</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Advisor & Support</h6>
+                                <p class="m-0">SBDMS streamlines blood donation processes, connecting donors and recipients efficiently, ensuring timely aid for those in dire need.</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
@@ -205,14 +334,14 @@
                 </div>
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
-                        <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-2.jpg" style="object-fit: cover;">
+                        <div class="col-12 col-sm-5 h-150">
+                            <img class="img-fluid h-100" src="https://scontent.fdac149-1.fna.fbcdn.net/v/t1.6435-9/90173492_2806217449427693_6325741061771624448_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeH3kCc5U7x_ONBDnjjV6gjaGdSOjWH7rG4Z1I6NYfusbvAQiooATLqRcDZfaff8vzjgLb-cOkxFaQX723Zriq9D&_nc_ohc=b8gt5aupeQYAX_7sRqR&_nc_ht=scontent.fdac149-1.fna&oh=00_AfBeCoo5e97NtXsGXjy88InBxHgKA-2qQAIN2eSV1XkyaA&oe=654D0722" style="object-fit: cover;">
                         </div>
-                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                        <div class="col-12 col-sm-7 h-150 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                                <h3>Syed Faridul Alam</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Founder & President</h6>
+                                <p class="m-0">SBDMS streamlines blood donation processes, connecting donors and recipients efficiently, ensuring timely aid for those in dire need.</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
@@ -224,14 +353,14 @@
                 </div>
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
-                        <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                        <div class="col-12 col-sm-5 h-150">
+                            <img class="img-fluid h-100" src="https://scontent.fdac149-1.fna.fbcdn.net/v/t39.30808-6/317239702_5798962296835132_250130655755588766_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHyFNa6KyNoB2apeHypBfST3UXD3YdJB1vdRcPdh0kHW1_hNhyQqRbqzjz0l9h6eJ9OYu5hGN9QTfjLLTp8T58r&_nc_ohc=698KfRYhswgAX--zliH&_nc_ht=scontent.fdac149-1.fna&oh=00_AfDvkct8QpzPYDDt_VTwPLjN8pPreK6UR42VgACub04n0A&oe=652B425E" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                                <h3>Evans Victor McCreath</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Founder & Vice President</h6>
+                                <p class="m-0">SBDMS streamlines blood donation processes, connecting donors and recipients efficiently, ensuring timely aid for those in dire need.</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
@@ -241,6 +370,84 @@
                         </div>
                     </div>
                 </div>
+                <div class="team-item">
+                  <div class="row g-0 bg-light rounded overflow-hidden">
+                      <div class="col-12 col-sm-5 h-150">
+                          <img class="img-fluid h-100" src="https://scontent.fdac149-1.fna.fbcdn.net/v/t39.30808-6/284689431_5888622884497978_5888486697877213755_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeE7_fY99NWXCZ5--R1Y8E9DAfvNpEropoMB-82kSuimgzoQVa-UuptAThkCa-pk_4GJBTg_JqxGVA8G4Eaca3ly&_nc_ohc=3ekGJkj8pkoAX8djpCD&_nc_ht=scontent.fdac149-1.fna&oh=00_AfDVuqEIBtKxwvEuUgtIEsr4v3-fz1fzYpHnWL_EPsAcmA&oe=652B2ED7" style="object-fit: cover;">
+                      </div>
+                      <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                          <div class="mt-auto p-4">
+                              <h3>Arman Hossain Mithun</h3>
+                              <h6 class="fw-normal fst-italic text-primary mb-4">Founder & Secretary</h6>
+                              <p class="m-0">SBDMS streamlines blood donation processes, connecting donors and recipients efficiently, ensuring timely aid for those in dire need.</p>
+                          </div>
+                          <div class="d-flex mt-auto border-top p-4">
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="team-item">
+                    <div class="row g-0 bg-light rounded overflow-hidden">
+                        <div class="col-12 col-sm-5 h-150">
+                            <img class="img-fluid h-100" src="https://scontent.fdac149-1.fna.fbcdn.net/v/t39.30808-6/287140477_5930795010270747_4276161371219552733_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeGuipyviZVgff9O1p2wJZZYTavbZxCaggJNq9tnEJqCAm64k4kVkJ-67yJCH9moknfTheEOTR63PCgSh-TmPegn&_nc_ohc=2eoPrIAR8UsAX-Wwm8w&_nc_ht=scontent.fdac149-1.fna&oh=00_AfCtqOx1C7B2LrcQCs7FxbJ1anREaD4Dd-W3qr0td8iHog&oe=6529CC15" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                            <div class="mt-auto p-4">
+                                <h3>Md. Nasir Uddin Akon</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Founder & Trainer</h6>
+                                <p class="m-0">SBDMS streamlines blood donation processes, connecting donors and recipients efficiently, ensuring timely aid for those in dire need.</p>
+                            </div>
+                            <div class="d-flex mt-auto border-top p-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                  <div class="row g-0 bg-light rounded overflow-hidden">
+                      <div class="col-12 col-sm-5 h-150">
+                          <img class="img-fluid h-100" src="https://scontent.fdac10-1.fna.fbcdn.net/v/t1.6435-9/130835165_3614821081941944_2482765735113086948_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGFAvOCDUF9o5o1suJsrgE0NjGRcvPzbAM2MZFy8_NsA0BRt6hZMQtAzwFeXpDCdhQ339zNFr2T2l8DZFmMJFuV&_nc_ohc=9aWZG7oiBN0AX9oMBWf&_nc_ht=scontent.fdac10-1.fna&oh=00_AfCl_OWx0MXHIDohiIVowY9RqwgDtMfaK2g_se6M4sesdQ&oe=654DBB93" style="object-fit: cover;">
+                      </div>
+                      <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                          <div class="mt-auto p-4">
+                              <h3>Sumon Chowhan</h3>
+                              <h6 class="fw-normal fst-italic text-primary mb-4">Exicutive Member & Support Unit</h6>
+                              <p class="m-0">SBDMS streamlines blood donation processes, connecting donors and recipients efficiently, ensuring timely aid for those in dire need.</p>
+                          </div>
+                          <div class="d-flex mt-auto border-top p-4">
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="team-item">
+                    <div class="row g-0 bg-light rounded overflow-hidden">
+                        <div class="col-12 col-sm-5 h-150">
+                            <img class="img-fluid h-100" src="https://scontent.fdac10-1.fna.fbcdn.net/v/t39.30808-6/274110685_1829293867459614_7476418437234766264_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeE8QOSShtchswV0AcanL6Vxnn1a-XcFarCefVr5dwVqsAn7s_mb_UYOKTe8GUtBPABPw-EJBl-RZpO085a7dLO-&_nc_ohc=QQdfdsvYN2cAX-XKTbf&_nc_ht=scontent.fdac10-1.fna&oh=00_AfC9X03D3F4NGUC0pNF5J2fvdeEYJSeZWXD7chcM84EJyw&oe=652B86B6" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                            <div class="mt-auto p-4">
+                                <h3>Md. Mostafizur Rahman</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Exicutive Member & Mobile Software Engineer</h6>
+                                <p class="m-0">SBDMS streamlines blood donation processes, connecting donors and recipients efficiently, ensuring timely aid for those in dire need.</p>
+                            </div>
+                            <div class="d-flex mt-auto border-top p-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </div>
@@ -248,74 +455,162 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</h4>
-                    <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</h4>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Popular Links</h4>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Newsletter</h4>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
-                        </div>
-                    </form>
-                    <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+    <div class="container-fluid bg-dark text-light py-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4
+              class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4"
+            >
+            Mission:
+            </h4>
+            <ul class="ps-0">
+              <li>
+                <p class="mb-4">
+                  To build a contributory community (CC) through closely knit helping hands.
+                </p>
+              </li>
+              <li>
+                <p class="mb-2">
+                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Mirpur 12, Pallabi Dhaka- 1216
+                </p>
+              </li>
+              <li>
+                <a class="mb-2" href="mailto: info@hupbd.org">
+                  <i class="fa fa-envelope text-primary me-3"></i>info@hupbd.org
+                </a>
+              </li>
+              <li>
+                <a class="mb-0" href="tel:+8801970248241">
+                  <i class="fa fa-phone-alt text-primary me-3"></i
+                  >+8801970248241
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4
+              class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4"
+            >
+              Quick Links
+            </h4>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Home</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>About Us</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Our Services</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Meet The Team</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Latest Event</a
+              >
+              <a class="text-light" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Contact Us</a
+              >
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4
+              class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4"
+            >
+              Popular Links
+            </h4>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Home</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>About Us</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Our Services</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Meet The Team</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Latest Event</a
+              >
+              <a class="text-light" href="#"
+                ><i class="fa fa-angle-right me-2"></i>Contact Us</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4
+              class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4"
+            >
+              Newsletter
+            </h4>
+            <form action="">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control p-3 border-0"
+                  placeholder="Your Email Address"
+                />
+                <button class="btn btn-primary">Sign Up</button>
+              </div>
+            </form>
+            <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
+            <div class="d-flex">
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                href="#"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="container-fluid bg-dark text-light border-top border-secondary py-4">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-primary" href="#">Your Site Name</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
+    <div
+      class="container-fluid bg-dark text-light border-top border-secondary py-4"
+    >
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-md-0">
+              &copy; <a class="text-primary" href="#">SBDMS</a>. All Rights
+              Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">
+              Designed by
+              <a class="text-primary" href="#">TechBurn</a>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
 
     <!-- JavaScript Libraries -->
