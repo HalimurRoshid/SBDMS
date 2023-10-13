@@ -5,6 +5,15 @@
   --light: #eff5f9;
   --dark: #1d2a4d;
 }
+a {
+  text-decoration: none !important;
+}
+.text-primary {
+  color: #ff4500 !important;
+}
+.bg-primary {
+  background-color: #ff4500 !important;
+}
 .black {
   color: var(--dark);
 }
@@ -274,7 +283,7 @@
 
 /* Extra css */
 .c-item {
-  height: 65vh;
+  height: 67vh;
 }
 .c-img {
   height: 100%;
@@ -298,6 +307,12 @@ li {
 }
 .red {
   color: rgb(245, 52, 52);
+}
+.translate-hov {
+  transition: ease-in all 0.4s;
+}
+.translate-hov:hover {
+  transform: translateX(10px);
 }
 /*=======================
 	Start Blog CSS

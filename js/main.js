@@ -128,7 +128,6 @@
     },
   });
 
-
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
     autoplay: true,
@@ -152,7 +151,7 @@
     dots: false,
     responsive: {
       0: {
-        items: 1, // Display 1 item on screens less than 480px wide
+        items: 2, // Display 1 item on screens less than 480px wide
       },
       480: {
         items: 2, // Display 2 items on screens between 480px and 768px wide
